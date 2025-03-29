@@ -673,6 +673,10 @@ margin-top: 50px;
   display: none;
 }
 
+.instagram {
+  background-color:#46B482;
+}
+
 /* Footer */
 
 footer {
@@ -906,7 +910,9 @@ fieldset {
     width: 300px;
     margin: 0;
   }
-  
+
+  .instagram{
+    display:none;
 }
 
 @media (min-width: 978px) {
