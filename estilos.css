@@ -385,12 +385,12 @@ header {
   display: inline-block;
   color: var(--text-color);
   margin: 10px 0 0 0;
-  transform: translate(110%);
+  \*transform: translate(110%);*/
 }
 
 .texto__animado {
   margin: ;
-  transform: translate(-110%);
+  \*transform: translate(-110%);*/
 }
 
 .figure__sobreMi {
