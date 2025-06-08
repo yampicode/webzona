@@ -588,64 +588,6 @@ margin-top: 50px;
   place-content: center;
 }
 
-/* Testimonios */
-
-.testimonio {
-  position: relative;
-}
-
-.hgroup__testimonio .subtitulo {
-  --font-size-subtitulo: 2.50em;
-  margin-bottom: 0;
-  color: var(--color-h3);
-}
-
-.texto__testimonio {
-  display: flex;
-  flex-direction: column;
-}
-
-.figure__testimonio {
-  width: max-content;
-}
-
-.figure__testimonio figcaption {
-  border-bottom: 1px solid var(--color-border);
-  color: var(--text-color);
-}
-
-.img__testimomio {
-  display: block;
-  width: 250px;
-  height: 250px;
-  min-width: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.subtitulo__testimonio {
-  font-size: 1.5em;
-  text-align: center;
-  color: var(--color-h4);
-}
-
-.parrafo__testimonio {
-  font-size: var(--font-size-parrafo);
-  text-align: center;
-}
-
-.icofont-quote-left,
-.icofont-quote-right {
-  font-size: 1.5em;
-  color: var(--bg-brand);
-}
-
-.cta__testimonio {
-  display: flex;
-  width: max-content;
-  margin: 0 auto;
-}
-
 /* Presupuesto */
 
 .presupuesto{
