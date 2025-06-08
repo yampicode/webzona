@@ -566,7 +566,7 @@ margin-top: 50px;
 /* Precios */
 
 .precios {
-  background-color: var(--bg-brand);
+  background-color: var(--bg-secundario);
   color: var(--color-white);
 }
 
