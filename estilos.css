@@ -77,8 +77,6 @@ main {
 
 footer {
   grid-area: c;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -593,7 +591,6 @@ margin-top: 50px;
 /* Presupuesto */
 
 .presupuesto{
-  position: relative;
   background-color: var(--bg-color-secundario);
   color: var(--color-white);
 }
