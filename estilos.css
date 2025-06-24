@@ -462,6 +462,19 @@ margin-top: 50px;
   height: 250px;
 }
 
+/* publicidad */
+
+.publicidad {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  
+}
+
+.gif{
+  width: 100vw;
+  margin: 0 auto;
+}
 /* Nuestros servicios */
 
 .servicio {
