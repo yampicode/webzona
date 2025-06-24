@@ -871,6 +871,19 @@ fieldset {
     display:none;
 }
 
+  
+.publicidad {
+  display: block;
+  width: 400px;
+  margin:100px auto;
+}
+
+.gif{
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+    }
+  
 @media (min-width: 978px) {
   
 .grid__contenedor {
