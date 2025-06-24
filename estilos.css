@@ -818,7 +818,9 @@ fieldset {
     margin-left: 10px;
   }
 
-
+.precio {
+  padding:100px 0;
+    }
 .precio__contenido{
   flex-direction: row;
  justify-content: space-around;
@@ -875,7 +877,7 @@ fieldset {
 .publicidad {
   display: block;
   width: 400px;
-  margin:100px auto;
+  margin:0 auto 100px;
 }
 
 .gif{
