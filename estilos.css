@@ -411,7 +411,7 @@ height: 100vh;
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  object-fit: center;
+  object-fit: cover;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
   margin: 10px auto 0;
 }
@@ -419,7 +419,7 @@ height: 100vh;
 .sobre-mi__subtitulo {
   font-family: var(--heading-font);
   color: var(--color-h2);
-  font-size: 2.5em;
+  font-size: 2.2em;
   font-weight: 400;
   margin-bottom: 10px;
 }
