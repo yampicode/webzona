@@ -146,6 +146,9 @@ header {
   background-size: cover;
   background-attachment: ;
   background-position: center;
+@media (width >= 576px){
+height: 100vh;
+}
 }
 
 .head {
