@@ -402,6 +402,7 @@ height: 100vh;
 }
 
 .figure__sobreMi figcaption {
+margin-top: 10px;
   border-bottom: 1px solid;
   padding: 5px 0 0 5px;
 }
