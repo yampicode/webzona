@@ -597,10 +597,11 @@ margin-top: 50px;
   transition: .3s ease-in-out;
 }
 
-.modal__empleo--close {
-  display: none;
-  transition: .3s ease-in-out;
-}
+.img__form{
+border-radius: 50%;
+display: block;
+margin: 0 auto;
+width: 150px;
 
 .landingpage {
   padding: 100px 0;
