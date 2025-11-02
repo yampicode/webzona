@@ -285,7 +285,7 @@ height: 100vh;
 
 .titulo {
   font-size: 2.1em;
-  font-family: "archivo black";
+  font-family: var(--heading-font);
   text-transform: uppercase;
   margin-bottom: 10px;
   color: var(--color-white);
