@@ -168,7 +168,7 @@ header {
   position: relative;
   height: 70vh;
   background-color: var(--color-brand);
-  background-image: linear-gradient( #ffffff5c, var(--color-brand)), url('webzona.jpeg');
+  background-image: linear-gradient( #ffffff5c, var(--color-brand)), url('cohete.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: ;
