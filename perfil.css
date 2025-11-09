@@ -1,0 +1,32 @@
+
+.ymujica__figure {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.ymujica__img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 20px 20px 10px 50px;
+  object-fit: cover;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+  margin: 10px auto 0;
+}
+
+.ymujica__figure figcaption {
+  margin-top: 10px;
+  padding: 5px 0 0 5px;
+  border-bottom: 2px solid var(--color-secundario);
+}
+
+.perfil__img{
+  display: block;
+  width: 100%;
+  
+  @media width >= 560 {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
