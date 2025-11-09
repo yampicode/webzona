@@ -79,6 +79,10 @@
 font-size: 3em;
 }
 
+.bg__brand{
+background-color: var(--color-brand);
+}
+
 /* Fin de Utilitys */
 
 .grid__contenedor {
