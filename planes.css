@@ -1,0 +1,68 @@
+/* Planes y Precios */
+
+.precio {
+  background-color: var(--color-secundario);
+}
+
+.precio .parrafo,
+.lista .item{
+  color: var(--color-white);
+}
+
+.lista {
+  list-style: none;
+}
+
+.item strong {
+  text-transform: uppercase;
+}
+
+.card__contenedor {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: center;
+  
+}
+
+.card__contenedor .card {
+  margin: 0 auto;
+  background-color: var(--color-brand);
+  border: solid 1px var(--color-brand);
+  max-width:300px;
+}
+
+.card__contenedor .card .card-header {
+  color: var(--color-white);
+}
+
+.card__contenedor .card .card-title {
+  color: var(--color-secundario);
+  border-bottom: solid 1px var(--color-brand);
+  display: inline-block;
+  font-weight: bold;
+}
+
+.card__contenedor .card .card-body {
+  background-color: var(--color-white );
+}
+
+.card__contenedor .card .card-body,
+.card .lista .item{
+  color: var(--color-brand);
+}
+
+.planes .lista {
+  padding: 0;
+  }
+
+.enfoque { 
+  background-color: var(--color-secundario);
+}
+
+.enfoque .lista .item,
+.enfoque .parrafo {
+  color: var(--color-white);
+}
+/* Fin de Planes y precio */
