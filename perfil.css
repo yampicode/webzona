@@ -30,3 +30,70 @@
     margin: 0 auto;
   }
 }
+
+/* Certificados */
+
+/* Carrusel */ 
+.carrusel {
+  
+  margin: 100px auto;
+  display: flex;
+  width: 80%;
+  overflow-x: auto;
+}
+
+.carrusel__group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: spin 5s infinite linear;
+  padding-right: 1em;
+}
+
+.carrusel::-webkit-scrollbar {
+  display: none;
+}
+
+.carrusel__img {
+  flex:0 0 5em;
+  height: 5em;
+  padding: 1em;
+  border-radius: 5px;
+  align-content: center;
+}
+
+@keyframes spin {
+  from {translate: 0;}
+  to {
+    translate: -100%;
+  }
+  
+}
+
+/* Proyectos */
+
+.proyectos {
+  padding: 100px 0;
+}
+
+.cards__proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  place-content: center;
+}
+
+.cards__proyectos .card {
+  width: 90%;
+  margin-top: 20px;
+  
+  @media (width >=978px) {
+    width: 40%;
+  }
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
