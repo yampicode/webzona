@@ -44,21 +44,21 @@
   <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="fuentes.css">
 
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="style.min.css">
   <link rel="stylesheet" href="">
   <link rel="stylesheet" href="icofont.min.css">
   <link rel="stylesheet" href="animate.min.css">
-    <link rel="stylesheet" href="boton-ws.css">
+    <link rel="stylesheet" href="boton-ws.min.css">
   <link rel="stylesheet" href="faq.css" type="text/css" media="all" />
 
 
   <!-- JavaScript -->
 
-  <script defer src="index.js"></script>
-  <script defer src="tema.js"></script>
-  <script defer src="script.js"></script>
+  <script defer src="main.min.js"></script>
+  <script defer src="tema.min.js"></script>
+  <script defer src="script.min.js"></script>
   <script defer src="popper.min.js"></script>
-  <script defer src="loaderPage.js"></script>
+  <script defer src="loaderPage.min.js"></script>
 
   <script defer src="validar-formulario.js"></script>
 
@@ -70,11 +70,13 @@
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
 </script>
   </head>
-  <body>
+  <body class="grid__contenedor">
     <amp-auto-ads type="adsense"
         data-ad-client="ca-pub-4904948441378686">
 </amp-auto-ads>
-     <header class="header" id="inicio" title="Foto de Lee Campbell.">
+     <header class="header"
+     id="inicio" title="Foto de Lee Campbell.">
+       
     <nav class="nav">
 
       <div class="nav__elementos">
@@ -85,11 +87,11 @@
         <div class="elementos__ico">
           <figure class="main__light me-3">
             <label for="modo">
-              <span class="icofont-duotone icofont-increase img__tema" id="" title="Ajustar color del tema"></span>
+        <span class=" icofont-duotone icofont-dark-mode img__tema" id="" title="Ajustar color del tema"></span>
               <input type="checkbox" id="modo" class="main__check">
             </label>
           </figure>
-          <figure><span class="icofont-navigation-menu hamburger" alt="Menú" title="Menú" role="img" aria-label="Menú"></span></figure>
+       <figure><span class="icofont-duotone icofont-menu hamburger" alt="Menú" title="Menú" role="img" aria-label="Menú"></span></figure>
         </div>
       </div>
 
@@ -97,32 +99,38 @@
       ></span>
       </a>
 
-      <ul class="menu-navegacion" rol="nav">
-        <li><a class="link" href="index.html#inicio"> <span class="icofont-home"></span> Inicio</a></li>
-        <li><a class="link" href="index.html#sobre-mi"><span class="icofont-user"></span> sobre mí</a></li>
+  <div id="overlay"></div>
+  
+<ul class="menu-navegacion" rol="nav">
+<li><a class="link" href="index.html#inicio"> <span class="icofont-duotone icofont-home"></span> Inicio</a></li>
+<li><a class="link" href="index.html#nosotros"><span class="icofont-duotone icofont-groups"></span> Nosotros</a></li>
 
-        <li><a class="link" href="index.html#servicio"><span class="icofont-tools-alt-2"></span> Servicio</a></li>
-       
-        <!-- <li><a class="link" href="#testimonios"><span class="icofont-speech-comments"></span> Testimonios</a></li> -->
-       
-        <li class=""><a class="link" href="https://webzona-blog.blogspot.com" target="_blank"><span class="icofont-blogger"></span> Blog</a>
-        </li>
-           <li><a class="link" href="empleo.html#empleo"><span class="icofont-briefcase-2"></span> Empleo</a></li>
-        <li class=""><a class="link" href="#faq"><span class="icofont-support-faq"></span> Preguntas Frecuentes</a>
-        </li>
-        <li><a class="link" href="#footer"><span class="icofont-support"></span> Contacto</a></li>
+<li><a class="link" href="index.html#servicio"><span class="icofont-duotone icofont-screwdriver"></span> Servicio</a></li>
 
-        <span class="icofont-close close" alt="Cerrar menú" title="Cerrar menú" role="img" aria-label="Cerrar menú"></span>
-      </ul>
+<li><a class="link" href="planes.html#planes"><span class="icofont-duotone icofont-category"></span> Planes</a></li>
+
+<li class=""><a class="link" href="https://webzona-blog.blogspot.com" target="_blank"><span class="icofont-duotone icofont-book"></span> Blog</a>
+</li>
+<li><a class="link" href="empleo.html#empleo"><span class="icofont-duotone icofont-briefcase"></span> Empleo</a></li>
+<li class=""><a class="link" href="preguntas-frecuentes.html#faq"><span class="icofont-duotone icofont-question-sign-circle"></span> Preguntas Frecuentes</a>
+</li>
+<li><a class="link" href="index.html#contacto"><span class="icofont-duotone icofont-support"></span> Contacto</a></li>
+
+<span class="icofont-close close" alt="Cerrar menú" title="Cerrar menú" role="img" aria-label="Cerrar menú"></span>
+</ul>
     </nav>
 
-    <div class="contenedor head" title="Foto de Monoar Rahman en Pexels">
+  <video autoplay muted loop id="bg-video" poster="webzonave.png">
+    <source src="webzonave.mp4" type="video/mp4">
+  </video>
+
+    <div class="contenedor head">
       <h1 id="" class="titulo
         animate__animated animate__bounceInUp animate__slower animate__delay-1s">
         <stromg>¡Emprendemos Contigo!</stromg>
       </h1>
       
-      <a href="landingpage.html#landingpage" class="btn btn-primary animate__animated animate__swing animate__delay-3s animate__slow">¡Empecemos tu proyecto hoy!</a>
+      <a href="index.html#empecemosHoy" class="btn btn-primary animate__animated animate__swing animate__delay-3s animate__slow">¡Empecemos tu proyecto hoy!</a>
     </div>
     <figure>
       <svg class="wave wave-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -170,13 +178,13 @@
      <section class="acordeon" id="faq">
       
       <div class="contenedor">
-        <h2 class="subtitulo text-center mb-5">Preguntas Frecuentes</h2>
+        <h2 class="subtitulo mb-5">Preguntas Frecuentes</h2>
         
           <details>
             <summary class=" ">
                ¿Cuánto tiempo toma desarrollar un sitio web?
             </summary>
-            <p>El tiempo de desarrollo varía según la complejidad del proyecto. Un sitio web básico puede tomar de 2 a 3 semanas, mientras que proyectos más complejos como e-commerce o aplicaciones web pueden tomar de 4 a 8 semanas.</p>
+            <p>El tiempo de desarrollo varía según la complejidad del proyecto. Un sitio web básico puede tomar de 1 a 2 semanas, mientras que proyectos más complejos como e-commerce o aplicaciones web pueden tomar de 4 a 8 semanas.</p>
           </details>
           
              <details>
@@ -201,8 +209,12 @@
 
       </div>
     </section>
+    <section class="" id="ad__webzona">
+
+<script src="//web.webformscr.com/apps/fc3/build/loader.js" async sp-form-id="42e521b1c97fb7b0b7006a433bf924bf8acb0be1b2f8ab7d64f120846cf30ae0"></script>
+
+</section>
     </main>
-    
     
   <!-- Footer -->
 
