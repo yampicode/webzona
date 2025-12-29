@@ -30,7 +30,7 @@
   margin: 0 auto;
   background-color: var(--color-brand);
   border: solid 1px var(--color-brand);
-  max-width:300px;
+  max-width:250px;
 }
 
 .card__contenedor .card .card-header {
