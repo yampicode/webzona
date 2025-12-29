@@ -35,10 +35,6 @@ flex-direction: row;
   background-color: var(--color-brand);
   border: solid 1px var(--color-brand);
   max-width:250px;
-
-@media (width >= 978px) {
-margin: 0;
-}
 }
 
 .card__contenedor .card .card-header {
