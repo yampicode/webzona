@@ -10,7 +10,8 @@
             
             const text = `Hola, estoy interesado/da en un servicio:%0A%0A*Nombre:* ${name}%0A*Teléfono:* ${phone}%0A*Email:* ${email}%0A*Plan:* ${plan}%0A*Mensaje:* ${message}`;
             
-            window.open(`https://wa.me/584120348988?text=${text}`, '_blank');
+      alert('¡Gracias por tu solicitud! Serás redirigido a WhatsApp para confirmar.'); 
+         window.open(`https://wa.me/584120348988?text=${text}`, '_blank');
             form.reset();
-            alert('¡Gracias por tu solicitud! Serás redirigido a WhatsApp para confirmar.');
+        
         }
