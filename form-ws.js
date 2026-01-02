@@ -1,5 +1,4 @@
-
-  document.getElementById("budgetForm").addEventListener("submit", function(e) {
+ document.getElementById("budgetForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
     // Capturamos los valores
@@ -10,7 +9,7 @@
     let proyecto = document.getElementById("proyecto").value;
 
     // Número de WhatsApp destino (formato internacional sin + ni 00)
-    let numeroWhatsApp = "584141234567"; // Ejemplo: Venezuela (+58)
+    let numeroWhatsApp = "584120348988"; // Venezuela (+58)
 
     // Construimos el mensaje con saltos de línea y estilo
     let mensaje = `*Nueva solicitud de presupuesto*%0A
@@ -20,9 +19,14 @@
 💼 *Servicio:* ${servicio}%0A
 📝 *Proyecto:* ${proyecto}`;
 
-    // Creamos la URL de WhatsApp
-    let url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+    // Detectamos si el usuario está en móvil o escritorio
+    let esMovil = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-    // Abrimos WhatsApp en una nueva pestaña
+    // URL según dispositivo
+    let url = esMovil 
+      ? `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensaje}` 
+      : `https://web.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensaje}`;
+
+    // Abrimos WhatsApp
     window.open(url, "_blank");
   });
