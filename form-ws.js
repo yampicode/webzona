@@ -2,11 +2,17 @@
     e.preventDefault();
 
     // Capturamos los valores
-    let nombre = document.getElementById("nombre").value;
-    let correo = document.getElementById("correo").value;
-    let telefono = document.getElementById("telefono").value;
+    let nombre = document.getElementById("nombre").value.trim();
+    let correo = document.getElementById("correo").value.trim();
+    let telefono = document.getElementById("telefono").value.trim();
     let servicio = document.getElementById("servicio").value;
-    let proyecto = document.getElementById("proyecto").value;
+    let proyecto = document.getElementById("proyecto").value.trim();
+
+    // Validaciones básicas
+    if (!nombre || !correo || !servicio || !proyecto) {
+      alert("⚠️ Por favor completa todos los campos obligatorios antes de enviar.");
+      return;
+    }
 
     // Número de WhatsApp destino (formato internacional sin + ni 00)
     let numeroWhatsApp = "584120348988"; // Venezuela (+58)
@@ -29,4 +35,7 @@
 
     // Abrimos WhatsApp
     window.open(url, "_blank");
+
+    // Mensaje de confirmación en pantalla
+    alert("✅ Tu solicitud fue enviada a WhatsApp. Nos pondremos en contacto contigo pronto.");
   });
