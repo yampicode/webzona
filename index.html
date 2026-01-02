@@ -327,6 +327,7 @@ Un sitio web bien diseñado no es solo una tarjeta de presentación; es su princ
 </div>
 
 </section>
+
 <section class="llamadaAccion" id="empecemosHoy">
   <div class="contenedor">
     <hgroup>
@@ -340,7 +341,7 @@ Un sitio web bien diseñado no es solo una tarjeta de presentación; es su princ
       <input type="tel" id="telefono" class="form-control" placeholder="Teléfono">
       
       <select id="servicio" class="form-control" required>
-        <option value=""  selected>Selecciona un servicio</option>
+        <option value="" disabled selected>Selecciona un servicio</option>
         <option value="Desarrollo Web">Desarrollo Web</option>
         <option value="App Móvil">App Móvil</option>
         <option value="E-Commerce">E-Commerce</option>
@@ -354,8 +355,14 @@ Un sitio web bien diseñado no es solo una tarjeta de presentación; es su princ
         Enviar Consulta <span class="icofont-brand-whatsapp" role="img" aria-label="Logo de WhatsApp"></span>
       </button>
     </form>
+
+    <!-- Mensaje de confirmación -->
+    <div id="mensajeConfirmacion" class="mensaje-confirmacion">
+      ✅ Tu solicitud fue enviada a WhatsApp. Nos pondremos en contacto contigo pronto.
+    </div>
   </div>
 </section>
+
 
 <section id="contacto" class="contacto">
 <div class="contenedor">
