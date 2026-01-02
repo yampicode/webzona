@@ -1,59 +1,17 @@
- document.getElementById("budgetForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    // Capturamos los valores
-    let nombre = document.getElementById("nombre").value.trim();
-    let correo = document.getElementById("correo").value.trim();
-    let telefono = document.getElementById("telefono").value.trim();
-    let servicio = document.getElementById("servicio").options[document.getElementById("servicio").selectedIndex].value;
-    let proyecto = document.getElementById("proyecto").value.trim();
-
-    // Validaciones básicas
-    if (!nombre) {
-      alert("⚠️ Por favor ingresa tu nombre.");
-      return;
-    }
-    if (!correo) {
-      alert("⚠️ Por favor ingresa tu correo.");
-      return;
-    }
-    if (servicio === "" || servicio === null) {
-      alert("⚠️ Por favor selecciona un servicio.");
-      return;
-    }
-    if (!proyecto) {
-      alert("⚠️ Por favor describe tu proyecto.");
-      return;
-    }
-
-    // Número de WhatsApp destino
-    let numeroWhatsApp = "584120348988"; // Venezuela (+58)
-
-    // Construimos el mensaje con saltos de línea y estilo
-    let mensaje = `*Nueva solicitud de presupuesto*%0A
-👤 *Nombre:* ${nombre}%0A
-📧 *Correo:* ${correo}%0A
-📱 *Teléfono:* ${telefono}%0A
-💼 *Servicio:* ${servicio}%0A
-📝 *Proyecto:* ${proyecto}`;
-
-    // Detectamos si el usuario está en móvil o escritorio
-    let esMovil = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-    // URL según dispositivo
-    let url = esMovil 
-      ? `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensaje}` 
-      : `https://web.whatsapp.com/send?phone=${numeroWhatsApp}&text=${mensaje}`;
-
-    // Abrimos WhatsApp
-    window.open(url, "_blank");
-
-    // Mostrar mensaje de confirmación
-    let mensajeDiv = document.getElementById("mensajeConfirmacion");
-    mensajeDiv.style.display = "block";
-
-    // Ocultar automáticamente después de 5 segundos
-    setTimeout(() => {
-      mensajeDiv.style.display = "none";
-    }, 5000);
-  });
+      // Función para enviar el formulario por WhatsApp
+        function submitForm(event) {
+            event.preventDefault();
+            const form = event.target;
+            const name = form.name.value;
+            const phone = form.phone.value;
+            const email = form.email.value || 'No proporcionado';
+            const service = form.service.value;
+            const date = form.date.value;
+            const message = form.message.value || 'No hay mensaje adicional';
+            
+            const text = `Hola, estoy interesado/da en un servicio:%0A%0A*Nombre:* ${name}%0A*Teléfono:* ${phone}%0A*Email:* ${email}%0A*Servicio:* ${service}%0A*Mensaje:* ${message}`;
+            
+            window.open(`https://wa.me/584120348988?text=${text}`, '_blank');
+            form.reset();
+            alert('¡Gracias por tu solicitud! Serás redirigido a WhatsApp para confirmar.');
+        }
