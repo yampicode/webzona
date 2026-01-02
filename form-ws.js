@@ -12,7 +12,7 @@
        
 form.reset();
      window.open(`https://wa.me/584120348988?text=${text}`, '_blank');
-      alert('¡Gracias por tu solicitud! Serás redirigido a WhatsApp para confirmar.'); 
+      alert('¡Gracias por tu solicitud! En breve te responderemos al WhatsApp para confirmar.'); 
          
             
         
