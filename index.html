@@ -327,30 +327,36 @@ Un sitio web bien diseñado no es solo una tarjeta de presentación; es su princ
 </div>
 
 </section>
-
 <section class="llamadaAccion" id="empecemosHoy">
-<div class="contenedor">
-<hgroup class="">
-<h2 class="subtitulo">Contáctanos</h2>
-<h3 class="h3 text-center">Solicita tu Presupuesto hoy</h3>
-</hgroup>
-<form id="budgetForm">
-<input type="text" class="form-control" placeholder="Nombre completo" required>
-<input type="email" class="form-control" placeholder="Correo electrónico" required>
-<input type="tel" class="form-control" placeholder="Teléfono">
-<select class="form-control" required>
-<option value="" disabled selected>Selecciona un servicio</option>
-<option value="web">Desarrollo Web</option>
-<option value="app">App Móvil</option>
-<option value="ecommerce">E-Commerce</option>
-<option value="seo">SEO y Marketing</option>
-<option value="consultoria">Consultoría TI</option>
-</select>
-<textarea class="form-control" rows="5" placeholder="Describe tu proyecto e indique su plan de preferencia." required></textarea>
-<button type="submit" class="btn btn-primary mt-3" title="Enviar Consulta">Enviar Consulta <span class="icofont-brand-whatsapp" alt="Icono de WhatsApp" role="img" aria-label="Logo de WhatsApp"></span></button>
-</form>
-</div>
+  <div class="contenedor">
+    <hgroup>
+      <h2 class="subtitulo">Contáctanos</h2>
+      <h3 class="h3 text-center">Solicita tu Presupuesto hoy</h3>
+    </hgroup>
+
+    <form id="budgetForm">
+      <input type="text" id="nombre" class="form-control" placeholder="Nombre completo" required>
+      <input type="email" id="correo" class="form-control" placeholder="Correo electrónico" required>
+      <input type="tel" id="telefono" class="form-control" placeholder="Teléfono">
+      
+      <select id="servicio" class="form-control" required>
+        <option value="" disabled selected>Selecciona un servicio</option>
+        <option value="Desarrollo Web">Desarrollo Web</option>
+        <option value="App Móvil">App Móvil</option>
+        <option value="E-Commerce">E-Commerce</option>
+        <option value="SEO y Marketing">SEO y Marketing</option>
+        <option value="Consultoría TI">Consultoría TI</option>
+      </select>
+      
+      <textarea id="proyecto" class="form-control" rows="5" placeholder="Describe tu proyecto e indique su plan de preferencia." required></textarea>
+      
+      <button type="submit" class="btn btn-primary mt-3" title="Enviar Consulta">
+        Enviar Consulta <span class="icofont-brand-whatsapp" role="img" aria-label="Logo de WhatsApp"></span>
+      </button>
+    </form>
+  </div>
 </section>
+
 <section id="contacto" class="contacto">
 <div class="contenedor">
   
