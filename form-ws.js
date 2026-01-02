@@ -5,16 +5,28 @@
     let nombre = document.getElementById("nombre").value.trim();
     let correo = document.getElementById("correo").value.trim();
     let telefono = document.getElementById("telefono").value.trim();
-    let servicio = document.getElementById("servicio").value;
+    let servicio = document.getElementById("servicio").options[document.getElementById("servicio").selectedIndex].value;
     let proyecto = document.getElementById("proyecto").value.trim();
 
     // Validaciones básicas
-    if (!nombre || !correo || !servicio || !proyecto) {
-      alert("⚠️ Por favor completa todos los campos obligatorios antes de enviar.");
+    if (!nombre) {
+      alert("⚠️ Por favor ingresa tu nombre.");
+      return;
+    }
+    if (!correo) {
+      alert("⚠️ Por favor ingresa tu correo.");
+      return;
+    }
+    if (servicio === "" || servicio === null) {
+      alert("⚠️ Por favor selecciona un servicio.");
+      return;
+    }
+    if (!proyecto) {
+      alert("⚠️ Por favor describe tu proyecto.");
       return;
     }
 
-    // Número de WhatsApp destino (formato internacional sin + ni 00)
+    // Número de WhatsApp destino
     let numeroWhatsApp = "584120348988"; // Venezuela (+58)
 
     // Construimos el mensaje con saltos de línea y estilo
@@ -36,6 +48,12 @@
     // Abrimos WhatsApp
     window.open(url, "_blank");
 
-    // Mensaje de confirmación en pantalla
-    alert("✅ Tu solicitud fue enviada a WhatsApp. Nos pondremos en contacto contigo pronto.");
+    // Mostrar mensaje de confirmación
+    let mensajeDiv = document.getElementById("mensajeConfirmacion");
+    mensajeDiv.style.display = "block";
+
+    // Ocultar automáticamente después de 5 segundos
+    setTimeout(() => {
+      mensajeDiv.style.display = "none";
+    }, 5000);
   });
