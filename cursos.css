@@ -1,0 +1,394 @@
+  .archivo-black-regular {
+      font-family: "Archivo Black", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    /* Controles */
+    .controls-section {
+      margin-bottom: 2.5rem;
+    }
+
+    /* Buscador */
+    .search-container {
+      max-width: 500px;
+      margin: 0 auto 1.5rem;
+      position: relative;
+    }
+
+    .search-input {
+      color:var(--color-brand);
+      width: 100%;
+      padding: 1rem 1.5rem 1rem 3.5rem;
+      font-size: 1.1rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 60px;
+      background: white;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      transition: all 0.2s;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 8px 15px -3px rgba(59, 130, 246, 0.15);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94a3b8;
+      font-size: 1.2rem;
+    }
+
+    .clear-search {
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: #94a3b8;
+      cursor: pointer;
+      font-size: 1.1rem;
+      display: none;
+    }
+
+    .clear-search.visible {
+      display: block;
+    }
+
+    /* Filtro Desde-Hasta */
+    .price-filter-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .price-filter-container {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: white;
+      padding: 1rem 2rem;
+      border-radius: 60px;
+      border: 2px solid #e2e8f0;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .filter-group label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-left: 0.5rem;
+    }
+
+    .price-input-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: #f8fafc;
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      border: 1px solid #e2e8f0;
+      transition: all 0.2s;
+    }
+
+    .price-input-wrapper:focus-within {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    .price-input-wrapper span {
+      color: #64748b;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .price-input-wrapper input {
+      width: 100px;
+      padding: 0.5rem 0.3rem;
+      border: none;
+      background: transparent;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #0f172a;
+      outline: none;
+    }
+
+    .price-input-wrapper input::placeholder {
+      color: #94a3b8;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+
+    .filter-separator {
+      color: #94a3b8;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+
+    .filter-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .filter-btn {
+      background: steelblue;
+      color: white;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: 40px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      white-space: nowrap;
+    }
+
+    .filter-btn:hover {
+      background: #fff;
+      border: 1px solid steelblue;
+      color: steelblue;
+      transform: scale(1.02);
+    }
+
+    .filter-btn.reset {
+      background: #f1f5f9;
+      color: steelblue;
+    }
+
+    .filter-btn.reset:hover {
+      background: #e2e8f0;
+      border: 1px solid steelblue;
+      color: steelblue;
+    }
+
+    /* Resultados info */
+    .resultados-info {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #64748b;
+      min-height: 28px;
+    }
+
+    .active-filters {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #3730a3;
+      padding: 0.2rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-left: 0.5rem;
+    }
+
+    .highlight {
+      background: #fef9c3;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 500;
+      color: #854d0e;
+    }
+
+    /* Grid de cursos */
+    .cursos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .no-resultados {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 4rem 2rem;
+      background: white;
+      border-radius: 20px;
+    }
+
+    .no-resultados i {
+      font-size: 3.5rem;
+      color: #cbd5e1;
+      margin-bottom: 1rem;
+    }
+
+    .no-resultados h3 {
+      font-size: 1.5rem;
+      color: #334155;
+      margin-bottom: 0.5rem;
+    }
+
+    .btn-reset {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      padding: 0.7rem 2rem;
+      border-radius: 40px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-reset:hover {
+      background: #2563eb;
+    }
+
+    /* Card de curso */
+    .curso-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+      transition: transform 0.25s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      animation: fadeIn 0.3s ease-out;
+    }
+
+    .curso-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 30px -12px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      background: #e2e8f0;
+    }
+
+    .card-content {
+      padding: 1.5rem 1.5rem 1.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .curso-nombre {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: steelblue;
+      line-height: 1.3;
+    }
+
+    .precios-container {
+      margin-bottom: 1.25rem;
+    }
+
+    .precio-usd {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.2;
+    }
+
+    .precio-ves {
+      font-size: 1rem;
+      color: #64748b;
+      margin-top: 0.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .precio-ves i {
+      font-size: 0.8rem;
+      color: #10b981;
+    }
+
+    .btn-cta {
+      display: inline-block;
+      background: steelblue;
+      color: white;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0.9rem 1.5rem;
+      border-radius: 60px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.2s;
+      margin-top: auto;
+      box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3);
+    }
+
+    .btn-cta:hover {
+      background: #fff;
+      color: steelblue;
+      box-shadow: 0 8px 15px -3px rgba(37, 99, 235, 0.4);
+      transform: scale(1.02);
+    }
+
+    .placeholder-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(145deg, #dbeafe, #e0e7ff);
+      color: #3b82f6;
+      height: 180px;
+    }
+
+    /* Footer */
+    .nota {
+      text-align: center;
+      color: #64748b;
+      border-top: 1px solid #e2e8f0;
+      padding: 2rem 0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      .price-filter-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1.5rem;
+        gap: 1rem;
+      }
+
+      .filter-group {
+        width: 100%;
+      }
+
+      .price-input-wrapper {
+        width: 100%;
+      }
+
+      .price-input-wrapper input {
+        width: 100%;
+      }
+
+      .filter-separator {
+        text-align: center;
+      }
+
+      .filter-actions {
+        justify-content: center;
+      }
+    }
