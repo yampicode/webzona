@@ -8,6 +8,8 @@ self.addEventListener('install', event => {
         'main.min.js',
         'offline.html',
         'cursos.html',
+        'cursos.js',
+        'cursos.css',
         'icofont.min.css',
         'icofont.ttf',
         'ArchivoBlack-Regular.ttf',
